@@ -1,0 +1,522 @@
+/* product desc */
+/* primary_block ***************************************************************************** */
+
+
+
+
+
+.lomi_product_detail{
+	background:#f0eadf;
+	position:relative;
+}
+
+.lomi_product_detail .illustration{
+	float:left;
+	width:60%;	
+	position:relative;
+}
+
+
+body.res_640 .lomi_product_detail .illustration{
+	float:none;
+	width:inherit;
+}
+
+
+.lomi_product_detail .illustration img{
+	display:block;
+	width:100%;
+}
+
+.lomi_product_right{
+	display:block;
+	float:right;
+	width:40%;	
+	background:#f0eadf;
+	text-align:left;
+}
+
+body.res_640 .lomi_product_right{
+	float:none;
+	width:inherit;
+}
+
+.lomi_product_right .inner{
+	padding:50px 50px 0 50px;	
+}
+
+body.res_640 .lomi_product_right .inner{
+	padding:25px 15px 20px 15px;	
+}
+
+.lomi_product_detail .title{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	
+}
+
+.lomi_product_detail .title .mask{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	
+	z-index:4;
+}
+
+
+
+.lomi_product_detail h1,
+.lomi_product_detail .title .cache{
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+	font-size:25px;
+	text-transform:uppercase;
+	color:#FFF;
+	text-align:center;
+	background: rgba(#000,0.3);
+}
+
+body.res_640 .lomi_product_detail h1,
+body.res_640 .lomi_product_detail .title .cache{
+	font-size:16px;
+	line-height:18px;
+	text-align:left;
+}
+
+.lomi_product_detail h1{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	
+	z-index:5;
+}
+
+.lomi_product_detail .title .cache{
+	visibility:hidden;
+}
+
+.lomi_product_detail h1 span,
+.lomi_product_detail .title .cache span{
+	display:block;
+	padding:22px 22px;
+	
+}
+
+body.res_640 .lomi_product_detail h1 span,
+body.res_640 .lomi_product_detail .title .cache span{
+	padding:16px 50px 16px 15px;
+}
+
+.lomi_product_features{
+	margin:0 0 30px 0;
+}
+
+.lomi_product_features h3{
+	font-size:15px;
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	text-transform:uppercase;
+	margin:0 0 12px 0;
+}
+
+.lomi_product_features table{
+	border-collapse:collapse;
+	width:100%;
+}
+
+.lomi_product_features td{
+	border:1px solid #d8d2c8;
+	border-left:none;
+	border-right:none;
+	border-collapse:collapse;
+	padding:10px 15px 10px 0;
+	vertical-align:central;
+	text-align:left;
+
+}
+.lomi_product_features td.feature_name{
+	font-family: 'lomi_bold',Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-transform:uppercase;
+}
+
+.lomi_product_features td.feature_value{
+	text-align:right;
+	padding:10px 0 10px 15px;	
+	font-size:11px;
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+}
+
+#our_price_display{
+	display:inline-block;
+	color:#8cc63f;
+	font-family: 'lomi_bold',Arial, Helvetica, sans-serif;
+	font-size:32px;
+	background:#FFF;
+	padding:13px 5px;
+	vertical-align:middle;
+	text-align:center;
+	margin-right:30px;
+	
+	width:200px;
+}
+
+body.res_640 #our_price_display{
+	width:150px;
+}
+
+.btnAddCart{
+	background:url(../img/btnAddCart.png) no-repeat center center;
+	width:60px;
+	height:60px;
+	display:inline-block;
+	overflow:hidden;
+	border:none;
+	text-indent:-10000px;
+	font-size:0.0001em;
+	color:#f0eadf;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+.btnAddCart:active{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.lomi_product_detail #attributes{
+	margin:0 0 30px 0;	
+}
+
+.lomi_product_detail .attribute_fieldset{
+	border:none;
+	padding:0;
+	
+}
+
+.lomi_product_detail .attribute_fieldset label{
+	font-size:14px;	
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+}
+
+.lomi_product_detail .attribute_fieldset select{
+	width:240px;
+	background:#FFF;
+	border:5px solid #FFF;
+}
+
+.lomi_product_detail .attribute_fieldset select option{
+	font-size:13px;
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+}
+
+.lomi_product_detail #quantity_wanted{
+	width:150px;
+	background:#FFF;
+	border:5px solid #FFF;
+	font-size:14px;	
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+	display:inline-block;	
+	vertical-align:middle;
+}
+
+#quantity_wanted_p{
+	margin:0 0 30px 0;	
+}
+
+.quantity_label{
+	font-size:14px;	
+	font-family: 'lomi_light',Arial, Helvetica, sans-serif;
+	display:block;	
+}
+
+.lomi_product_detail.sur_devis .price,
+.lomi_product_detail.sur_devis #buy_block{
+	
+	display:none !important;
+}
+
+a.product_quantity_change:link,
+a.product_quantity_change:visited{
+	
+	vertical-align:middle;
+	display:inline-block;
+	text-decoration:none;
+	background:#FFF;
+	text-align:center;
+	height:24px;
+	width:24px;
+	margin-left:5px;
+	
+	font-size:20px;
+	color:#333333;
+	
+}
+
+a.product_quantity_change:hover,
+a.product_quantity_change:active{
+	color:#FFF;
+	background:#8cc63f;
+}
+
+.lomi_product_detail_description{
+	background:#eeeeee;
+	text-align:center;
+	
+	font-size:18px;
+}
+
+.lomi_product_detail_description h2{
+	font-size:18px;
+	font-family: 'lomi_bold',Arial, Helvetica, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	margin:0 0 25px 0;	
+}
+
+.lomi_product_detail_description p{
+	margin:0 0 25px 0;	
+}
+
+.lomi_product_detail_description .inner{
+	padding:80px;
+}
+
+body.res_640 .lomi_product_detail_description .inner{
+	padding:15px;
+	text-align:left;
+	font-size:16px;
+	line-height:18px;
+}
+
+.lomi_product_detail_bottom{
+	position:relative;	
+	background:#eeeeee;
+}
+
+
+/*
+.lomi_product_detail_bottom .lomi_product_detail_description{
+	width:40%;
+	float:left;
+	min-height:330px;
+}
+*/
+
+.lomi_product_detail_bottom.hasVideo .lomi_product_detail_description,
+.lomi_product_detail_bottom.hasFile .lomi_product_detail_description{
+	width:40%;
+	float:left;
+	min-height:330px;
+}
+
+body.res_640 .lomi_product_detail_bottom .lomi_product_detail_description{
+	float:none !important;
+	width:inherit !important;
+	min-height:inherit !important;
+}
+
+
+
+.lomi_product_detail_download{
+	background:#4d4d4d;
+	position:absolute;
+	bottom:0;
+	right:0;
+	height:100%;
+	width:60%;
+	
+}
+
+body.res_640 .lomi_product_detail_download{
+	position:relative;
+	bottom:inherit;
+	right:inherit;
+	height:220px;
+	width:inherit;
+}
+
+body.res_640 .lomi_product_detail_download .verticalAlign{
+	margin-top:0 !important;
+	padding-top:30px;
+}
+
+.lomi_product_detail_video{
+	background:#333333;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	width:60%;
+}
+
+body.res_640 .lomi_product_detail_video{
+	position:relative;
+	top:inherit;
+	right:inherit;
+	height:220px;
+	width:inherit;
+}
+
+.lomi_product_detail_bottom.hasVideo.hasFile .lomi_product_detail_download,
+.lomi_product_detail_bottom.hasVideo.hasFile .lomi_product_detail_video{
+	height:50%;	
+}
+
+body.res_640 .lomi_product_detail_bottom.hasVideo.hasFile .lomi_product_detail_download,
+body.res_640 .lomi_product_detail_bottom.hasVideo.hasFile .lomi_product_detail_video{
+	height:220px;
+}
+
+.lomi_product_detail_download a:link,
+.lomi_product_detail_download a:visited{
+	display:block;
+	text-decoration:none;	
+	background:url(../img/lomi_download.png) no-repeat center top;
+	padding-top:90px;
+}
+
+.lomi_product_detail_download a:link h4,
+.lomi_product_detail_download a:visited h4{
+	font-size:18px;
+	color:#FFF;
+	font-family: 'lomi_regular',Arial, Helvetica, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	text-transform:uppercase;
+	margin:0 0 12px 0;
+}
+
+.lomi_product_detail_download a:link h5,
+.lomi_product_detail_download a:visited h5{
+	font-size:18px;
+	color:#b3b3b3;
+	font-family: 'lomi_regular',Arial, Helvetica, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	margin:0 0 0 0;
+}
+
+.lomi_product_detail_download a:hover h4,
+.lomi_product_detail_download a:active h4,
+.lomi_product_detail_download a:hover h5,
+.lomi_product_detail_download a:active h5{
+	color:#8cc63f;
+}
+
+
+
+.page-product-box{
+	display:none;	
+}
+
+.lomi_product_features .page-product-box{
+	display:block;	
+}
+
+.lomi_description_alt{
+	
+}
+
+.lomi_description_alt .inner{
+
+	padding:0;	
+}
+
+.lomi_product_detail_video a.vidbox:link,
+.lomi_product_detail_video a.vidbox:visited{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	
+	/*background:#990000;*/
+	text-decoration:none;
+	font-size:18px !important;
+	color:#FFF !important;
+	text-transform:uppercase;
+	font-family: 'lomi_regular',Arial, Helvetica, sans-serif !important;
+	
+	
+	text-align:center;
+	
+	
+}
+
+.lomi_product_detail_video a.vidbox .cat_img{
+	display:none;	
+}
+
+.lomi_product_detail_video a.vidbox:link .cat_body_product_id,
+.lomi_product_detail_video a.vidbox:visited .cat_body_product_id
+{
+	background:url(../img/lomi_icon_video.png) no-repeat center top;
+	float:none;
+	margin:0;
+	display:block;
+	min-height:inherit !important;
+	/*height:100%;*/
+	/*height:30px;*/
+	height:auto !important;
+	
+	font-size:18px !important;
+	color:#FFF;
+	width:100%;	
+	padding-top:70px;
+}
+
+.lomi_product_detail_video a.vidbox:hover .cat_body_product_id,
+.lomi_product_detail_video a.vidbox:active .cat_body_product_id
+{
+	color:#8cc63f;
+}
+
+.cat_img_text{
+	height:inherit !important;
+}
+
+
+#lomi_suggestions{
+	padding:50px 0;
+	text-align:center;
+}
+
+
+a.product_back_btn:link,
+a.product_back_btn:visited{
+	position:absolute;
+	top:0;
+	right:0;
+	display:block;	
+	width:50px;
+	height:50px;
+	background:#333333 url(../img/product_back_btn.png) no-repeat center center;
+	z-index:10;
+}
+
+a.product_back_btn:hover,
+a.product_back_btn:active{
+	background-color:#000;
+	
+}
+
+#availability_statut{
+	color:#900;	
+}

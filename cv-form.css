@@ -1,0 +1,629 @@
+/* profil-wall.css */
+
+
+/************ Form ***************/
+
+h2 {
+    font-family: Helvetica neue, Helvetica, Arial;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    line-height: 1em;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    font-weight: lighter;
+}
+
+
+/****** Form Title ************/
+
+.form-title-container {
+    width: 100%;
+    height: 70px;
+    font-size: 19px;
+    font-family: Helvetica neue, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #27898A;
+}
+
+.form-title {
+    padding-top: 38px;
+}
+
+
+/****** Form inner *****/
+
+form {
+    height: 58%;
+}
+
+form .left-side,
+form .right-side {
+    display: inline;
+    height: 100%;
+    width: 50%;
+}
+
+form .left-side {
+    float: left;
+}
+
+form .right-side {
+    float: right;
+}
+
+
+
+.cv_form {
+	width: 100%;
+    margin: auto;
+    height: calc(100% - 70px);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+
+/***** Form LEFT-side *****/
+
+
+/*** Jobs ***/
+
+.radio-container {
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.radio-job label {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.radio-job input,
+.radio-job input[type="radio"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    outline: 0;
+}
+
+.radio-job span {
+    position: relative;
+    float: left;
+    top: 50px;
+}
+
+.job-names {
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+.job-names p {
+    width: 98px;
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+}
+
+
+.regular-radio {
+    -webkit-appearance: none;
+    background-color: #EAEAEA;
+    border: 2px solid #27898A;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-radio:checked:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    background: #27898A;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: 0px;
+    left: 3px;
+    font-size: 32px;
+}
+
+.regular-radio:checked {
+    background-color: #e9ecee;
+    color: #99a1a7;
+    border: 3px solid #27898A;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.regular-radio:active, .regular-radio:checked:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.big-radio {
+    padding: 16px;
+}
+
+.big-radio:checked:after {
+    width: 10px;
+    height: 10px;
+    left: 2px;
+    top: 2px;
+}
+
+/*** Experience ***/
+
+.form-row {
+
+}
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 28px;
+}
+
+.btn-group .btn {
+    border: 2px solid #27898A;
+}
+
+.btn-group .btn-left {
+    right: -1px;
+}
+
+.btn-group label {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.btn-group .btn:hover {
+    background-color: none;
+}
+
+.btn:active, .btn.active {
+    background-image: none;
+}
+
+.btn-default:active, .btn-primary:active, .btn-success:active, .btn-info:active, .btn-warning:active, .btn-danger:active, .btn-default.active, .btn-primary.active, .btn-success.active, .btn-info.active, .btn-warning.active, .btn-danger.active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow: inset 0 3px 5px rgba(220, 188, 188, 0.125);
+}
+
+.btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: #1c6262;
+    border-color: #0b2627;
+}
+
+.btn-primary {
+    color: black;
+    font-weight: normal;
+    background-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+    background-image: -o-linear-gradient(top, #fff 0, #fff 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#e0e0e0));
+    background-image: linear-gradient(to bottom, #fff 0, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #27898A;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #27898A;
+    border-color: #1a5a5a;
+}
+
+/*** Upload icons ***/
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 23px;
+    padding: 10px;
+    background-color: #C3C3C3;
+}
+.fileUpload:hover {
+    background-color: #A19EA1;
+}
+.fileUpload input.upload {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.download_icon {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+/***** Form RIGHT-side *****/
+
+.box {
+    margin-top: 7px;
+}
+
+.cv_form label {
+    font-family: Helvetica neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+}
+
+.cv_form select, .cv_form input, .cv_form textarea {
+    font-size: 12px;
+    font-family: Helvetica neue, Helvetica, sans-serif;
+    padding: 8px;
+    width: 100%;
+    font-style: italic;
+    outline: 0;
+}
+
+textarea {
+    border-color: #CCCCCC;
+    resize:none;
+}
+.comment {
+    width: 280px;
+    height: 113px;
+}
+
+
+
+
+/***** Button post form *****/
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #1A5A5A;
+    background-position: 0 -45px;
+}
+
+.btn-default {
+    background-image: -webkit-linear-gradient(top, #27898a 0, #27898A 100%);
+    background-image: -o-linear-gradient(top, #27898a 0, #27898A 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #27898a), to(#1a5a5a));
+    background-image: linear-gradient(to bottom, #27898a 0, #27898A 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff27898a', endColorstr='#ff1a5a5a', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #175252;
+    text-shadow: 0 1px 0 #fff;
+    border-color: #ccc;
+}
+
+.btn_post {
+    border: none;
+    margin-left: 75%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 13px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+/************** form footer ************/
+
+.form-footer {
+    text-align: left;
+    display: inline-block;
+}
+
+
+.form-footer p {
+    font-family: Helvetica neue, Helvetica, Arial;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.form-footer a {
+    color: #424242;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    color: #27898A;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************ glyphicon calendar ********/
+
+.input-group-addon:last-child {
+    border-left: 0;
+}
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    display: table-cell;
+}
+
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin-top: 7px;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin-bottom: 0;
+    height: 30;
+}
+
+/******** Calendar ********/
+
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: #27898A;
+}
+
+.date {
+    float: right;
+    width: 100%;
+}
+
+.date input {
+    width: 100%;
+}
+
+
+
+/********* RESPONSIVE *************/
+
+
+/** mobile **/
+@media (max-width: 767px) {
+    h2 {
+        font-size: 15px;
+    }
+    .page-img-container {
+        display: none;
+    }
+    .page-content-container {
+        width: 100%;
+    }
+    form {
+        height: 40%;
+    }
+    .cv_form {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 200%;
+    }
+    form .left-side, form .right-side {
+        display: block;
+        width: 100%;
+    }
+    form .left-side {
+        height: 274px;
+    }
+    form .right-side {
+        height: 322px;
+    }
+    .radio-container {
+        margin-bottom: 0px;
+    }
+    .radio-job input, .radio-job input[type="radio"] {
+        margin-top: 12px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .job-names {
+        margin-top: -14px;
+    }
+    .job-names p {
+        width: 78px;
+        font-size: 10px;
+    }
+    .btn-group {
+        margin: 24px;
+    }
+    .btn-group label {
+        font-size: 10px;
+    }
+    .download_icon {
+        height: 40px;
+        width: 40px;
+    }
+    .fileUpload input.upload {
+        width: 60px;
+        height: 60px;
+    }
+    .fileUpload {
+        margin: 12px;
+    }
+    .btn_post {
+        width: 100%;
+    }
+    .form-footer p {
+        font-size: 10px;
+    }
+}
+
+
+/** tablette **/
+@media (min-width: 768px) and (max-width: 1099px) {
+    #page {
+        height: 100%;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    .page-img-container {
+        width: 20%;
+    }
+    .page-content-container {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1099px) and (orientation:portrait) {
+    .page-img {
+        margin-left: -650px;
+    }
+    .cv_form {
+        padding-top: 22px;
+    }
+    form {
+        height: 85%;
+    }
+    form .left-side, form .right-side {
+        display: block;
+        float: none;
+    }
+    form .left-side {
+        width: 100%;
+        height: 260px;
+    }
+    form .right-side {
+        height: 320px;
+        width: 65%;
+        margin: auto;
+    }
+    .radio-job input, .radio-job input[type="radio"] {
+        margin-top: 12px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .radio-container {
+        margin-bottom: 0px;
+    }
+    .job-names {
+        margin-top: -14px;
+    }
+    .job-names p {
+        width: 78px;
+        font-size: 10px;
+    }
+    .btn-group {
+        margin: 25px;
+    }
+    .btn-group label {
+        font-size: 10px;
+    }
+    .download_icon {
+        height: 40px;
+        width: 40px;
+    }
+    .fileUpload input.upload {
+        width: 60px;
+        height: 60px;
+    }
+    .fileUpload {
+        margin: 12px;
+    }
+    .btn_post {
+        width: 65%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        float: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) and (orientation:landscape) {
+    .page-img {
+        margin-left: -447px;
+    }
+    .radio-container {
+        margin-bottom: 25px;
+    }
+    .date input {
+        width: calc(100% + 1px);
+    }
+}
+
+@media (min-width: 1099px) {
+    #page {
+        height: 100%;
+    }
+    .date input {
+        width: calc(100% + 1px);
+    }
+}
+
+
